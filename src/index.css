@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 20s linear infinite;
+}
+
+/* ==========================
+   FONT AWESOME FONTS
+========================== */
+@font-face {
+  font-family: "FA-Brands";
+  src: url("/src/assets/fonts/fa-brands-400.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "FA-Regular";
+  src: url("/src/assets/fonts/fa-regular-400.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "FA-Solid";
+  src: url("/src/assets/fonts/fa-solid-900.ttf") format("truetype");
+  font-weight: 900;
+}
+
+/* ==========================
+   SUISSE INTL FONTS
+========================== */
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("/src/assets/fonts/suisseIntl-medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("/src/assets/fonts/suisseIntl-semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("/src/assets/fonts/suisseIntl-bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+*{
+    font-family:"SuisseIntl", sans-serif;
+}
+
+
+
+ 
