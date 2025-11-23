@@ -39,7 +39,7 @@ function Hero() {
 
 
   return (
-    <section className="bg-[#022526ff] #022526ff lg:h-228 h-288 sm:h- relative overflow-hidden">
+    <section className="bg-[#022526ff] #022526ff lg:h-228 h-274 sm:h- relative overflow-hidden">
       
       <div className="absolute bottom-0 right-0 lg:hidden block"><img src={herobg1} alt="" /></div>
        <div className="absolute bottom-[-300px] left-[-250px] lg:hidden block "><img src={nate7} alt="" className=""/></div>
@@ -175,22 +175,24 @@ function Hero() {
           </div>
 
           {/* ========== MOBILE HAMBURGER (NEW) ========== */}
+         <div className="bg-[#07340dff] #07340dff flex justify-center items-center h-10 rounded-sm w-10">
           <button
-            className="lg:hidden text-white "
+            className="lg:hidden  text-white "
             onClick={() => setMobileMenu(!mobileMenu)}
           >
             {mobileMenu ? (
               // CLOSE ICON
-              <svg  xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"  />
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
               // HAMBURGER
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             )}
           </button>
+          </div>
         </div>
 
         {/* ========== MOBILE NAV (SLIDE DOWN) ========== */}
@@ -206,7 +208,7 @@ function Hero() {
             <li>
               <details className="text-[#093e25ff]">
                 <summary className="cursor-pointer flex items-center justify-between" style={{ listStyle: "none" }}>Services <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></summary>
-                <ul className="mt-2 ml-4 space-y-2 text-gray-300">
+                <ul className=" space-y-2 h-25 w-75 gap-3 px-6 mt-3 flex flex-col justify-center text-[#093e25ff] border border-gray-200 rounded-lg">
                   <li><Link to="/our" onClick={() => setOpen(false)}>Our Services</Link></li>
                   <li><Link to="/details" onClick={() => setOpen(false)}>Services Details</Link></li>
                 </ul>
@@ -216,7 +218,7 @@ function Hero() {
             <li>
               <details className="text-[#093e25ff]">
                 <summary className="cursor-pointer flex items-center justify-between" style={{ listStyle: "none" }}>Projects <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></summary>
-                <ul className="mt-2 ml-4 space-y-2 text-gray-300">
+                 <ul className=" space-y-2 h-25 w-75 gap-3 px-6 mt-3 flex flex-col justify-center text-[#093e25ff] border border-gray-200 rounded-lg">
                   <li><Link to="/projects" onClick={() => setOpen(false)}>Our Projects</Link></li>
                   <li><Link to="/details2" onClick={() => setOpen(false)}>Projects Details</Link></li>
                 </ul>
@@ -244,9 +246,9 @@ function Hero() {
   className={`fixed top-0 left-0 w-full z-50 bg-white shadow-md transition-all duration-500 
   ${showSticky ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}
 >
-    <div className="h-20 relative w-full z-20">
+    <div className="h-17 relative w-full z-20">
 
-        <div className="flex items-center  justify-between lg:px-[120px] px-[20px] lg:py-[40px] lg:pt-5 pt-6">
+        <div className="flex items-center  justify-between lg:px-[120px] px-[20px] lg:py-[40px] lg:pt-5 pt-4">
 
           <div className="flex gap-2  items-center">
             <img src={img} alt="" className="w-6 h-6" />
@@ -269,12 +271,12 @@ function Hero() {
               <div className="absolute mt-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white text-white p-3 rounded-lg shadow-lg w-60 h-25 z-50 transition-opacity duration-200">
                 <ul>
                   <li>
-                    <Link to="/our" className="block hover:bg-gray-700 hover:text-white rounded text-[#012A2B] px-5 h-10 py-2">
+                    <Link to="/our" className="block hover:bg-gray-700 hover:text-white rounded  px-5 h-10 py-2">
                       Our Services
                     </Link>
                   </li>
                   <li>
-                    <Link to="/details" className="block hover:bg-gray-700 hover:text-white rounded text-[#012A2B] px-5 h-10 py-2">
+                    <Link to="/details" className="block hover:bg-gray-700 hover:text-white rounded  px-5 h-10 py-2">
                       Services Details
                     </Link>
                   </li>
@@ -318,22 +320,24 @@ function Hero() {
           </div>
 
           {/* ========== MOBILE HAMBURGER (NEW) ========== */}
+          <div className="bg-[#093e25ff] flex justify-center items-center h-10 rounded-sm w-10">
           <button
-            className="lg:hidden text-black"
+            className="lg:hidden  text-white "
             onClick={() => setOpen(!open)}
           >
             {open ? (
               // CLOSE ICON
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
               // HAMBURGER
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             )}
           </button>
+          </div>
         </div>
 
         {/* ========== MOBILE NAV (SLIDE DOWN) ========== */}
@@ -350,7 +354,7 @@ function Hero() {
             <li>
               <details className="text-[#093e25ff]">
                 <summary className="cursor-pointer flex items-center justify-between" style={{ listStyle: "none" }}>Services <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></summary>
-                <ul className="mt-2 ml-4 space-y-2 text-gray-300">
+                <ul className=" space-y-2 h-25 w-75 gap-3 px-6 mt-3 flex flex-col justify-center text-[#093e25ff] border border-gray-200 rounded-lg">
                   <li><Link to="/our" onClick={() => setOpen(false)}>Our Services</Link></li>
                   <li><Link to="/details" onClick={() => setOpen(false)}>Services Details</Link></li>
                 </ul>
@@ -360,7 +364,7 @@ function Hero() {
             <li>
               <details className="text-[#093e25ff]">
                 <summary className="cursor-pointer flex items-center justify-between" style={{ listStyle: "none" }}>Projects <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></summary>
-                <ul className="mt-2 ml-4 space-y-2 text-gray-300">
+                 <ul className=" space-y-2 h-25 w-75 gap-3 px-6 mt-3 flex flex-col justify-center text-[#093e25ff] border border-gray-200 rounded-lg">
                   <li><Link to="/projects" onClick={() => setOpen(false)}>Our Projects</Link></li>
                   <li><Link to="/details2" onClick={() => setOpen(false)}>Projects Details</Link></li>
                 </ul>
@@ -385,7 +389,7 @@ function Hero() {
 
       {/** … (I am not touching this part, it stays as you wrote it) **/}
 
-      <div className="pt-10 px-[13px] flex flex-col relative lg:hidden block">
+      <div className="lg:pt-10 pt-9 px-[13px] flex flex-col relative lg:hidden block">
  <div className="absolute bottom-0 right-[-20px]"><img src={bread2} alt="" /></div>
 <div>
   <h1 className="text-[41px] w-[100%] font-semibold text-white leading-[54px] justify-center text-center">
@@ -398,15 +402,15 @@ function Hero() {
   for the Future
 </h1>
 
-<p className="text-[18px] font-thin text-[#C6C6C6] w-[100%]  leading-[28px] text-center mt-5 ">We help clients formulate and implement a long-term, diversified investment strategy based on our  Outsourced CIO (OCIO) operational platform.</p>
+<p  className="text-[17px]  text-[#C6C6C6] w-[100%]  leading-[28px] text-center mt-2 ">We help clients formulate and implement a long-term, diversified investment strategy based on our  Outsourced CIO (OCIO) operational platform.</p>
 </div>
 
-<div className="relative flex justify-center mt-12">
+<div className="relative flex justify-center lg:mt-12 mt-10">
     
-    <button className="flex bg-[#D9FF43] relative  text-md font-semibold rounded-lg h-16 w-60 rounded-sm items-center justify-center">
+    <button className="flex bg-[#D9FF43] relative  text-md font-semibold rounded-lg h-18 w-60 rounded-sm items-center justify-center">
       Invest Today
        <div className="absolute top-0 left-[0px]">
-      <img src={btn} alt="" className="w-14 h-16 rounded-l-lg" />
+      <img src={btn} alt="" className="w-14 h-18 rounded-l-lg" />
     </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -421,7 +425,7 @@ function Hero() {
     </button>
   </div>
 
-<div className="flex justify-center mt-10 items-center gap-3 relative">
+<div className="flex justify-center lg:mt-10 mt-7 items-center gap-3 relative">
     <img src={client} alt="" className="w-[51px]" />
     <div>
       <div className="flex items-center gap-[2px]">

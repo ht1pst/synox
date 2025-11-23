@@ -8,17 +8,17 @@ import { useState } from "react";
 function PricingSection3(){
     const [isOn, setIsOn] = useState(false);
     return(
-        <section className="bg-[#023436ff] lg:h-390 h-800 pt-30 relative overflow-hidden px-[15px]">
-<div className="absolute top-[-60px] left-[-50px]"><img src={nate8} alt="" /></div>
-<div className="absolute  right-25"><img src={dollar3} alt="" className="w-15"/></div>
-<div className="absolute  bottom-[-310px] right-[-100px]"><img src={nate7} alt="" /></div>
-<div className="absolute  bottom-[-330px] left-[-280px]"><img src={nate11} alt="" /></div>
+        <section className="bg-[#023436ff] lg:h-390 h-800 lg:pt-30 pt-24 relative overflow-hidden px-[15px]">
+<div className="absolute top-[-60px] left-[-50px] lg:block hidden"><img src={nate8} alt="" /></div>
+<div className="absolute  right-25 lg:block hidden"><img src={dollar3} alt="" className="w-15"/></div>
+<div className="absolute  bottom-[-310px] right-[-100px] lg:block hidden"><img src={nate7} alt="" /></div>
+<div className="absolute  bottom-[-330px] left-[-280px] lg:block hidden"><img src={nate11} alt="" /></div>
 
 
 
           <div>
     <h1 className="lg:text-[50px] text-[29px] font-semibold text-white flex justify-center ">We Offered Best Pricing</h1>
-    <p className="#D9FF43  text-[18px] text-[#C6C6C6] lg:w-180 text-center pt-2 mx-auto ">We're here to assist with your financial goals. From investments to retirement planning, count on us for expert guidance</p>
+    <p className="#D9FF43  text-[18px] text-[#C6C6C6] lg:w-180 text-center pt-2 mx-auto pt-5 ">We're here to assist with your financial goals. From investments to retirement planning, count on us for expert guidance</p>
 </div>  
 
 <div className="flex items-center justify-center lg:gap-7  mt-8">

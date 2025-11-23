@@ -14,15 +14,15 @@ import nate2 from "../assets/shape_nate_10.svg";
 
 function OurSection3(){
     return(
-        <section className="bg-[#023436ff] relative pt-40 lg:h-300 h-780 overflow-hidden px-[15px] text-center lg:text-start">
+        <section className="bg-[#023436ff] relative lg:pt-40 pt-20 lg:h-300 h-740 overflow-hidden px-[15px] text-center lg:text-start">
             <div className="absolute top-[-50px] left-[-50px] lg:block hidden"><img src={nate} alt="" /></div>
              <div className="absolute bottom-[-50px] right-[-260px] lg:block hidden"><img src={nate2} alt="" /></div>
             <div>
                  <h1 className="lg:text-[50px] text-[30px] font-semibold text-white flex justify-center ">What we can help you with</h1>
-                    <p className="text-[18px] text-[#C6C6C6] lg:w-150 text-center pt-2 mx-auto ">We're here to assist with your financial goals. From investments to retirement planning, count on us for expert guidance</p>
+                    <p className="text-[18px] text-[#C6C6C6] lg:w-150 text-center lg:pt-2 pt-4 mx-auto ">We're here to assist with your financial goals. From investments to retirement planning, count on us for expert guidance</p>
             </div>
 
- <div className="flex flex-col lg:flex-row justify-center gap-8 pt-8">
+ <div className="flex flex-col lg:flex-row justify-center gap-8 lg:pt-8 pt-13">
 
 
   <div className="relative inline-block bg-[#022627ff] lg:w-100 px-[35px] pt-10 rounded-xl h-100 border border-[#033f42ff] hover:border hover:border-[#044e50ff] #044e50ff transition-all duration-700 ease-in-out" >

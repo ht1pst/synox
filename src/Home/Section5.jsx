@@ -100,7 +100,7 @@ useEffect(() => {
 
 
   return (
-    <section className="bg-[#022627ff] pt-30 h-260 relative overflow-hidden px-[15px]">
+    <section className="bg-[#022627ff] lg:pt-30 pt-21 h-260 relative overflow-hidden px-[15px] lg:px-[45px]">
         <div className="absolute left-10 top-100"><img src={img12} alt="" className="w-15 blur-[2px]" /></div>
         <div className="absolute right-10 bottom-20"><img src={img13} alt="" className="w-15 blur-[2px]" /></div>
       {/* blurred circle background */}
@@ -158,62 +158,52 @@ useEffect(() => {
   ))}
 </Swiper>
 
-      <div className="relative flex justify-center items-center mt-16 hidden lg:block">
-        {/* Prev Button */}
-       
 
-        {/* Cards Container */}
-        <div className="overflow-hidden relative w-[90%] max-w-[1200px]">
-            
-         <div
-  className="flex relative justify-center gap-5 pt-20 transition-transform duration-500 ease-in-out"
-  style={{
-    transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
-  }}
+
+<Swiper
+  spaceBetween={20}
+  slidesPerView={3}
+  pagination={{ clickable: true }}
+  modules={[Pagination]}
+  className="mySwiper"
 >
-
-            
-            {cards.map((card, i) => (
-              <div
-                key={i}
-                className="w-100 flex-shrink-0 bg-[#022627ff] h-110 py-30 relative rounded-xl border-t-[#D9FF43] border-l-0 border-r-0 border-b-[#D9FF43] border flex flex-col justify-center text-center"
-              >
-                
-                <div className="absolute top-[-40px] left-1/2 -translate-x-1/2">
-                  <img
-                    src={card.baseImg}
-                    alt=""
-                    className="rounded-full w-20"
-                  />
-                </div>
-                <p className="text-[20px] font-bold text-white w-70 text-center mx-auto ">
-                  {card.description}
-                </p>
-                <p className="text-md text-white font-semibold flex justify-center mt-20">
-                  {card.name}
-                </p>
-                <p className="text-[12px] text-[#C6C6C6] flex justify-center">{card.title}</p>
-              </div>
-            ))}
-          </div>
+  {cards.map((card, i) => (
+    <SwiperSlide key={i}>
+      <div className="bg-[#022627ff] h-110 py-30   relative rounded-xl lg:block hidden   flex flex-col justify-center text-center w-[90%] mx-auto mt-20">
+        
+        {/* The floating image */}
+        <div className="absolute top-[-40px] left-1/2 -translate-x-1/2">
+          <img
+            src={card.baseImg}
+            alt=""
+            className="rounded-full w-20"
+          />
         </div>
 
-        {/* Next Button */}
-      
+        {/* Description */}
+        <p className="lg:text-[20px] text-[18px] px-[15px] lg:font-bold font-thin text-white  text-center mx-auto">
+          {card.description}
+        </p>
+
+        {/* Name */}
+        <p className="text-md text-white font-semibold flex justify-center mt-20">
+          {card.name}
+        </p>
+
+        {/* Title */}
+        <p className="text-[12px] text-[#C6C6C6] flex justify-center">
+          {card.title}
+        </p>
+
       </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
+      
 
       {/* Dots */}
-     <div className="flex justify-center mt-8 gap-2">
-  {Array.from({ length: Math.ceil(cards.length / 2) }).map((_, index) => (
-    <div
-      key={index}
-      onClick={() => setCurrentIndex(index)}
-      className={`w-3 h-3 rounded-full cursor-pointer ${
-        currentIndex === index ? "bg-[#D9FF43]" : "bg-gray-500"
-      }`}
-    ></div>
-  ))}
-</div>
+    
 
     </section>
   );

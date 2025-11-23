@@ -14,11 +14,11 @@ import dollar3 from "../assets/shape_dollar_5.webp";
 
 function DetailsSection2(){
     return(
-        <section className="pt-30 lg:h-530 h-790 relative overflow-hidden px-[15px]">
+        <section className="lg:pt-30 pt-25 lg:h-530 h-790 relative overflow-hidden px-[15px]">
             
-             <div className="absolute right-[-200px]  top-140"><img src={nate3} alt=""  /></div>
-             <div className="absolute right-[-270px]  bottom-[-290px]"><img src={nate5} alt=""  /></div>
-             <div className="absolute left-[-230px]  bottom-[-250px]"><img src={nate6} alt="" className="w-130" /></div>
+             <div className="absolute lg:right-[-200px] right-[-270px]  lg:top-140 top-200"><img src={nate3} alt=""  /></div>
+             <div className="absolute lg:right-[-270px] right-[-300px]  lg:bottom-[-290px] bottom-[-370px]"><img src={nate5} alt=""  /></div>
+             <div className="absolute left-[-230px]  lg:bottom-[-250px] bottom-[-340px]"><img src={nate6} alt="" className="w-130" /></div>
 <div className="flex justify-center relative overflow-hidden">
   
      <div className="absolute  top-1/2 -translate-y-1/2 z-20 ">

@@ -15,15 +15,17 @@ import { Link } from "react-router-dom";
 
 function ProjDetailsSection2(){
     return(
-        <section className="pt-40 lg:h-630 h-1020 px-[15px]">
+        <section className="lg:pt-40 relative pt-30 lg:h-630 h-1000 px-[15px] overflow-hidden">
+              <div className="absolute lg:bottom-[-460px] bottom-[-320px] lg:right-[-300px] right-[-250px]"><img src={nate5} alt="" className="w-120" /></div>
+                      <div className="absolute lg:bottom-[-520px] bottom-[-400px] lg:left-[-300px] left-[-300px]"><img src={nate6} alt="" className="w-150" /></div>
 <div className="lg:px-30">
     <div className="">
     <img src={img} alt="" className="rounded-xl  w-full" />
-     <h1 className="lg:text-[50px] text-[30px] font-semibold text-[#012A2B] mt-15">Tax Planning Strategies for Optimal Business.</h1>
+     <h1 className="lg:text-[50px] text-[30px] font-semibold text-[#012A2B] lg:mt-15 mt-6">Tax Planning Strategies for Optimal Business.</h1>
 
-    <p  className="lg:text-[20px] text-[18px] text-[#6B6B6B] mt-5 leading-relaxed">Tax planning is a crucial aspect of effective financial management for any business seeking to maximize profitability and minimize tax liabilities. Implementing strategic tax planning strategies ensures that businesses can optimize their financial resources, enhance cash flow, and maintain compliance with tax regulations. By proactively identifying opportunities for deductions, structure their operations to minimize tax burdens while maximizing legitimate tax savings.</p>
+    <p  className="lg:text-[20px] text-[18px] text-[#6B6B6B] lg:mt-5 mt-2 leading-relaxed">Tax planning is a crucial aspect of effective financial management for any business seeking to maximize profitability and minimize tax liabilities. Implementing strategic tax planning strategies ensures that businesses can optimize their financial resources, enhance cash flow, and maintain compliance with tax regulations. By proactively identifying opportunities for deductions, structure their operations to minimize tax burdens while maximizing legitimate tax savings.</p>
 
-    <p className="lg:text-[20px] text-[18px] text-[#6B6B6B] mt-5 leading-relaxed">Moreover, careful tax planning enables businesses to adapt to changing tax laws and regulations, ensuring continued financial stability and growth. From utilizing tax-efficient investment vehicles to timing income and expenses strategically, businesses can leverage various tactics to achieve optimal tax outcomes</p>
+    <p className="lg:text-[20px] text-[18px] text-[#6B6B6B] lg:mt-5 mt-2 leading-relaxed">Moreover, careful tax planning enables businesses to adapt to changing tax laws and regulations, ensuring continued financial stability and growth. From utilizing tax-efficient investment vehicles to timing income and expenses strategically, businesses can leverage various tactics to achieve optimal tax outcomes</p>
 
 <div className=" top-8 border-1 border-l-0 border-r-0 border-t-0 border-gray-200  w-[85%] mt-10"></div>
     </div>

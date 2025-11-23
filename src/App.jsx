@@ -18,7 +18,8 @@ import OurSection3 from "./Services/OurSection3";
 import DetailsHero from "./ServicesDetails/DetailsHero";
 import DetailsSection2 from "./ServicesDetails/DetailsSection2";
 import Footer2 from "./Services/Footer2";
-
+import Footer3 from "./Services/Footer3";
+import OurSection4 from "./Services/OurSection4";
 
 // New import
 import ProjectsHero from "./Projects/ProjectsHero";
@@ -65,7 +66,8 @@ function App() {
               <OurHero/>
               <OurSection2/>
                <OurSection3/>
-              <Section8/>
+              <OurSection4/>
+              <Footer2/>
                
               </>
             }

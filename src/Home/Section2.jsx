@@ -43,10 +43,11 @@ function Section2(){
     return(
         <section className=" lg:h-340 h-550 bg-[#022627ff] relative overflow-hidden px-[15px]">
             <div className="absolute lg:top-[-200px] top-[-160px] lg:left-[-400px] left-[-460px]  "><img src={nate} alt="" className="" /></div>
-              <div className="absolute top-0 right-[-200px]  "><img src={nate2} alt="" className="" /></div>
+              <div className="absolute lg:top-0 top-20 lg:right-[-200px]  right-[-270px]  "><img src={nate2} alt="" className="" /></div>
         <div className="lg:pt-30 pt-22 relative ">
             
-            <h1 className="text-[18px] text-white relative   font-bold underline decoration-[#D9FF43] underline-offset-10 flex justify-center">TRUSTED BY  <span className="text-[#D9FF43]">100k+ Investors</span></h1>
+            <h1 className="text-[18px] text-white relative  gap-2  font-bold  decoration-[#D9FF43] underline-offset-10 flex justify-center">TRUSTED BY  <span className="text-[#D9FF43]">100k+ INVESTORS</span></h1>
+            <div className="border flex justify-center mx-auto w-72 text-[#D9FF43] border-[1px] mt-2"></div>
            </div>
            <div className="flex justify-center lg:gap-10 gap-5 lg:pt-10 pt-15">
             <img src={img1} alt="" className="lg:w-[150px] w-[100px]  lg:h-[30px] h-[20px]" />
@@ -66,7 +67,7 @@ function Section2(){
 <h1 className="lg:text-[50px] text-[30px] font-semibold text-white leading-tight w-[100%] lg:w-120 mt-10">We Value Data for  Informed Investing</h1>
             <p className="lg:text-[20px] text-[18px] text-[#C6C6C6] font-thin  lg:leading-[34px] leading-[30px] w-[100%] lg:w-130 pt-5 ">At synox, we prioritize data for smarter investments. Our  approach relies on thorough analysis of market trends,  economic indicators, and company performance.</p>
             
-            <div className="flex gap-10 pt-10 ">
+            <div className="flex lg:gap-10 gap-18 lg:pt-10 pt-7 ">
 <div>
     <h1 className="text-white lg:text-5xl text-[30px] font-semibold"> <CountUp end={200} duration={4} start={150} />K+</h1>
     <p className="lg:text-[20px] text-[16px] text-[#C6C6C6]">Projects Done</p>
@@ -76,9 +77,9 @@ function Section2(){
     <p className="lg:text-[20px] text-[16px] text-[#C6C6C6]">Years Experience</p>
 </div>
             </div>
-            <div className="relative mt-10">
-  <div className="absolute top-0 left-0 "><img src={btn} alt="" className="w-15" /></div>
-<button className="flex bg-[#D9FF43] text-md font-semibold h-16 w-55 rounded-sm items-center justify-center">About Us <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" /></svg>
+            <div className="relative lg:mt-10 mt-12">
+  <div className="absolute top-0 left-0 "><img src={btn} alt="" className="w-15 h-18 rounded-b-xl " /></div>
+<button className="flex bg-[#D9FF43] text-md font-semibold h-18 w-55 rounded-sm items-center justify-center">About Us <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" /></svg>
 </button>
 </div>
             
@@ -93,7 +94,7 @@ function Section2(){
 </div>
 
 
-<div className="flex flex-col lg:flex-row relative justify-center gap-4 mt-30">
+<div className="flex flex-col lg:flex-row relative justify-center lg:gap-4 gap-7 lg:mt-30 mt-23">
     <div className="absolute bottom-[-40px] left-22 hidden lg:block "><img src={dollar3} alt="" className="w-10" /></div>
     <div className=" lg:w-105   lg:h-45 h-70  px-[30px] py-[40px] lg:rounded-xl rounded-2xl bg-[#023436ff] #023436ff hover:border hover:border-[#D9FF43] transition-all duration-700 ease-in-out">
 <div className="flex flex-col lg:flex-row lg:tems-center items-start gap-5">
