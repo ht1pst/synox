@@ -33,8 +33,8 @@ function Section4(){
     <p className="lg:text-[20px] text-[18px] text-[#C6C6C6] lg:w-150 text-center pt-2 mx-auto ">Safety First is our motto at Synox prioritizing your financial security. Trust us for stability as you pursue your goals.</p>
 </div>
 
-<div className="flex flex-col lg:flex-row items-center gap-8 justify-center pt-10 ">
-<div className="bg-[#022627ff] lg:w-100 lg:h-132 h-136 flex flex-col gap-10 px-[35px] py-[40px] rounded-2xl">
+<div className="flex flex-col lg:flex-row items-center gap-8 justify-center  pt-10 ">
+<div className="bg-[#022627ff] lg:w-100 lg:h-132 h-140 flex flex-col gap-10 px-[35px] py-[40px] rounded-2xl">
     <img src={lock} alt="" className="w-7" />
     <p  className="text-[26px] font-semibold text-white">Secure transactions with two-factor authentication</p>
     <img src={img1} alt="" className="lg:w-[290px] w-[300px] mx-auto" />
