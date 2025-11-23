@@ -9,6 +9,7 @@ import Section6 from "./Home/Section6"
 import Section7 from "./Home/Section7"
 import Section8 from "./Home/Section8"
 import Footer from "./Home/Footer"
+import ScrollToTop from "./ScrollToTop";
 
 
 // New import
@@ -38,7 +39,9 @@ import PricingSection3 from "./Pricing/PricingSection3";
 
 function App() {
  return( 
+  
   <Router>
+     <ScrollToTop />
     <main>
       <Routes>
          <Route
