@@ -4,7 +4,7 @@ import img3 from "../assets/shape_nate_13.svg";
 import dollar1 from "../assets/shape_dollar_1.webp";
 import dollar2 from "../assets/shape_dollar_2.webp";
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
 
 const cardFadeUp = {
   hidden: { opacity: 0, y: 50 },
@@ -71,15 +71,28 @@ function OurSection4(){
 
  <div className="max-w-xl mx-auto lg:mx-0 space-y-4">
     <div>
-        <h1 className="lg:text-[46px] text-[30px] font-semibold text-white ">have a question look here</h1>
-                <p className="text-[18px] text-[#C6C6C6]   pt-2  mt-5">For quick answers, visit our FAQ section. Can't find what you need? Contact our support team.</p>
+        <motion.h1 className="lg:text-[46px] text-[30px] font-semibold text-white "
+         initial={{ opacity: 0, y: 50 }} // start hidden and below
+      whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
+      viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+      transition={{ duration: 0.8, ease: "easeOut" }}
+        >have a question look here</motion.h1>
+                <motion.p className="text-[18px] text-[#C6C6C6]   pt-2  mt-5"
+                 initial={{ opacity: 0, y: 50 }} // start hidden and below
+      whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
+      viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+      transition={{ duration: 0.8, ease: "easeOut" }}
+                >For quick answers, visit our FAQ section. Can't find what you need? Contact our support team.</motion.p>
                 </div>
           {faqs.map((faq, index) => {
             const isActive = activeIndex === index;
             return (
-              <div
+              <motion.div
                 className="border border-t-0 border-l-0 border-r-0 border-b-gray-700 bg-[#023436ff]   w-80 lg:w-140 overflow-hidden transition-all duration-300"
-              >
+             initial={{ opacity: 0, y: 30 }}        // start slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}     // slide up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }} >
             
                 {/* Questions */}
                 <button
@@ -104,7 +117,7 @@ function OurSection4(){
                     {faq.answer}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

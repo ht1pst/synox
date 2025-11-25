@@ -5,6 +5,7 @@ import nate11 from "../assets/shape_nate_11.svg";
 import dollar3 from "../assets/shape_dollar_3.webp";
 import dollar2 from "../assets/shape_dollar_2.webp";
 import { useState } from "react";
+import { motion } from "framer-motion";
 function PricingSection3(){
     const [isOn, setIsOn] = useState(false);
     return(
@@ -16,12 +17,27 @@ function PricingSection3(){
 
 
 
-          <div>
-    <h1 className="lg:text-[50px] text-[29px] font-semibold text-white flex justify-center ">We Offered Best Pricing</h1>
-    <p className="#D9FF43  text-[18px] text-[#C6C6C6] lg:w-180 text-center pt-2 mx-auto pt-5 ">We're here to assist with your financial goals. From investments to retirement planning, count on us for expert guidance</p>
+          <div  >
+    <motion.h1 className="lg:text-[50px] text-[29px] font-semibold text-white flex justify-center "
+       initial={{ opacity: 0, y: 50 }} // start hidden and below
+      whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
+      viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >We Offered Best Pricing</motion.h1>
+    <motion.p className="#D9FF43  text-[18px] text-[#C6C6C6] lg:w-180 text-center pt-2 mx-auto pt-5 "
+       initial={{ opacity: 0, y: 50 }} // start hidden and below
+      whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
+      viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >We're here to assist with your financial goals. From investments to retirement planning, count on us for expert guidance</motion.p>
 </div>  
 
-<div className="flex items-center justify-center lg:gap-7  mt-8">
+<motion.div className="flex items-center justify-center lg:gap-7  mt-8"
+   initial={{ opacity: 0, y: 50 }} // start hidden and below
+      whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
+      viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+      transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
    <div className="flex gap-2 items-center">
     <p className="bg-[#fd6614ff] #fd6614ff w-12 h-5 rounded-full text-white text-[13px] flex justify-center items-center ">30%</p>
@@ -44,14 +60,19 @@ function PricingSection3(){
 
 <div><h1 className="lg:text-lg text-md font-semibold text-white text-center lg:text-start">Billed Monthly</h1></div>
 
-</div>
+</motion.div>
 
 
 <div className="lg:px-30 mt-13 flex flex-col lg:gap-7 gap-10 relative">
 <div className="absolute right-[-270px] top-10 "><img src={nate10} alt="" /></div>
 <div className="absolute left-26 top-135 "><img src={dollar2} alt="" className="w-15" /></div>
     {/*01 */}
-<div className="flex flex-col lg:flex-row px-[20px] bg-[#012A2B] lg:w-full lg:h-80 h-220  lg:items-center lg:justify-start rounded-xl gap-20 relative">
+<motion.div className="flex flex-col lg:flex-row px-[20px] bg-[#012A2B] lg:w-full lg:h-80 h-220  lg:items-center lg:justify-start rounded-xl gap-20 relative"
+   initial={{ opacity: 0, y: 50 }} // start hidden and below
+      whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
+      viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+      transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
 
 <div>
@@ -111,12 +132,17 @@ function PricingSection3(){
 </div>
 
 
-</div>
+</motion.div>
 
 
 
  {/*02 */}
-<div  className="flex flex-col lg:flex-row px-[20px] bg-[#012A2B] lg:w-full lg:h-80 h-220  lg:items-center lg:justify-start rounded-xl gap-20 relative">
+<motion.div  className="flex flex-col lg:flex-row px-[20px] bg-[#012A2B] lg:w-full lg:h-80 h-220  lg:items-center lg:justify-start rounded-xl gap-20 relative"
+   initial={{ opacity: 0, y: 50 }} // start hidden and below
+      whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
+      viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+      transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
 
 <div>
@@ -174,12 +200,17 @@ function PricingSection3(){
     </div>
 </div>
 
-</div>
+</motion.div>
 
 
 
  {/*03 */}
-<div className="flex flex-col lg:flex-row px-[20px] bg-[#012A2B] lg:w-full lg:h-80 h-220  lg:items-center lg:justify-start rounded-xl gap-20 relative">
+<motion.div className="flex flex-col lg:flex-row px-[20px] bg-[#012A2B] lg:w-full lg:h-80 h-220  lg:items-center lg:justify-start rounded-xl gap-20 relative"
+   initial={{ opacity: 0, y: 50 }} // start hidden and below
+      whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
+      viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+      transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
 
 <div>
@@ -236,7 +267,7 @@ function PricingSection3(){
     </div>
 </div>
 
-</div>
+</motion.div>
 
 
 </div>

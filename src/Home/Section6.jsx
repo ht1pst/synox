@@ -8,7 +8,7 @@ import rectangle from "../assets/icon_rectangle.svg";
 import btn from "../assets/btn_shape.webp";
 import img12 from "../assets/shape_dollar_2.webp";
 import img13 from "../assets/shape_dollar_5.webp";
-
+import { motion } from "framer-motion";
 
 function Section6(){
     return(
@@ -18,12 +18,23 @@ function Section6(){
             <div className="absolute top-0 w-full"><img src={img} alt="" className="w-full h-120 " /></div>
             <div>
 <div className="relative lg:pt-30 pt-25 px-[15px]">
-     <h1 className="lg:text-[50px] text-[30px] font-semibold text-white flex justify-center text-center lg:text-start">
-         Find the level that suits you
-        </h1>
-        <p className="text-[17px] text-[#C6C6C6] lg:w-160 text-center pt-2 mx-auto lg:mt-5 mt-3">
+    <motion.h1
+      className="lg:text-[50px] text-[30px] font-semibold text-white text-center lg:text-start flex justify-center lg:justify-start"
+      initial={{ opacity: 0, y: 50 }} // start hidden and below
+      whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
+      viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      Find the level that suits you
+    </motion.h1>
+        <motion.p className="text-[17px] text-[#C6C6C6] lg:w-160 text-center pt-2 mx-auto lg:mt-5 mt-3"
+        initial={{ opacity: 0, y: 50 }} // start hidden and below
+      whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
+      viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+      transition={{ duration: 0.8, ease: "easeOut" }}
+        >
          Find your perfect fit at Synox We offer tailored solutions for investors at every stage. Let us guide you toward success.
-        </p>
+        </motion.p>
 </div>
 
 
@@ -31,7 +42,12 @@ function Section6(){
       <div className="absolute left-10 top-140"><img src={img12} alt="" className="w-15 blur-[2px]" /></div>
             <div className="absolute right-10 bottom-[-60px]"><img src={img13} alt="" className="w-15 blur-[2px]" /></div>
 {/* 01 */}
-<div className="flex justify-center lg:mt-15 mt-10">
+<motion.div className="flex justify-center lg:mt-15 mt-10"
+initial={{ opacity: 0, y: 30 }}        // start slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}     // slide up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 <div className="relative flex flex-col px-[35px] lg:flex-row lg:justify-center pt-10 lg:gap-30 bg-[#023436ff] lg:h-80 h-220  lg:w-320 w-[90%] lg:pt-15  rounded-2xl border border-[#055447ff] #055447ff" >
 
 <div className="relative inline-block">
@@ -110,12 +126,17 @@ Join Events, Meet Our Community</p>
     </button>
 </div>
 </div>
-</div>
+</motion.div>
 
 
 
 {/* 02 */}
-<div className="flex justify-center mt-5">
+<motion.div className="flex justify-center mt-5"
+initial={{ opacity: 0, y: 30 }}        // start slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}     // slide up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  >
 <div className="relative flex flex-col px-[35px] lg:flex-row lg:justify-center pt-10 lg:gap-30 bg-[#023436ff] lg:h-80 h-210  lg:w-320 w-[90%] lg:pt-15  rounded-2xl border border-[#055447ff] #055447ff"  >
 
 <div className="relative inline-block">
@@ -194,13 +215,18 @@ $2000/yr investment in Synox Deal</p>
     </button>
 </div>
 </div>
-</div>
+</motion.div>
 
 
 
 
 {/* 03 */}
-<div className="flex justify-center mt-5">
+<motion.div  className="flex justify-center mt-5"
+initial={{ opacity: 0, y: 30 }}        // start slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}     // slide up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 <div className="relative flex flex-col px-[35px] lg:flex-row lg:justify-center pt-10 lg:gap-30 bg-[#023436ff] lg:h-80 h-190  lg:w-320 w-[90%] lg:pt-15  rounded-2xl border border-[#055447ff] #055447ff"  >
 
 <div className="relative inline-block">
@@ -280,11 +306,16 @@ Unlimited investments</p>
     </button>
 </div>
 </div>
-</div>
+</motion.div>
 
 
 {/* 04 */}
-<div className="flex justify-center mt-5">
+<motion.div  className="flex justify-center mt-5"
+initial={{ opacity: 0, y: 30 }}        // start slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}     // slide up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 <div className="relative flex flex-col px-[35px] lg:flex-row lg:justify-center pt-10 lg:gap-30 bg-[#023436ff] lg:h-80 h-205  lg:w-320 w-[90%] lg:pt-15  rounded-2xl border border-[#055447ff] #055447ff"   >
 
 <div className="relative inline-block">
@@ -365,7 +396,7 @@ Unlimited investments</p>
     </button>
 </div>
 </div>
-</div>
+</motion.div>
 </div>
 
 

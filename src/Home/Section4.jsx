@@ -21,6 +21,7 @@ import dollar2 from "../assets/shape_dollar_2.webp";
 import dollar3 from "../assets/shape_dollar_3.webp";
 import dollar4 from "../assets/shape_dollar_4.webp";
 import btn from "../assets/btn_shape.webp";
+import { motion } from "framer-motion";
 function Section4(){
    return(
     <section className="bg-[#023436ff] lg:h-230 h-500 relative overflow-hidden px-[15px]">
@@ -29,41 +30,80 @@ function Section4(){
          <div className="absolute top-0 left-30 z-20 lg:block hidden "><img src={img12} alt="" className="w-13" /></div>
         <div>
 <div>
-    <h1 className="lg:text-[50px] text-[30px] font-semibold text-white flex justify-center ">Safety First</h1>
-    <p className="lg:text-[20px] text-[18px] text-[#C6C6C6] lg:w-150 text-center pt-2 mx-auto ">Safety First is our motto at Synox prioritizing your financial security. Trust us for stability as you pursue your goals.</p>
+    <motion.h1
+  className="lg:text-[50px] text-[30px] font-semibold text-white flex justify-center"
+  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
+  Safety First
+</motion.h1>
+    <motion.p
+  className="lg:text-[20px] text-[18px] text-[#C6C6C6] lg:w-150 text-center pt-2 mx-auto"
+  initial={{ opacity: 0, y: 30 }}        // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}     // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} // small delay after heading
+>
+  Safety First is our motto at Synox prioritizing your financial security. Trust us for stability as you pursue your goals.
+</motion.p>
 </div>
 
 <div className="flex flex-col lg:flex-row items-center gap-8 justify-center  pt-10 ">
-<div className="bg-[#022627ff] lg:w-100 lg:h-132 h-140 flex flex-col gap-10 px-[35px] py-[40px] rounded-2xl">
-    <img src={lock} alt="" className="w-7" />
-    <p  className="text-[26px] font-semibold text-white">Secure transactions with two-factor authentication</p>
-    <img src={img1} alt="" className="lg:w-[290px] w-[300px] mx-auto" />
-</div>
+<motion.div
+  className="bg-[#022627ff] lg:w-100 lg:h-132 h-140 flex flex-col gap-10 px-[35px] py-[40px] rounded-2xl"
+  initial={{ opacity: 0, y: 30 }}        // start slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}     // slide up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
+  <img src={lock} alt="" className="w-7" />
+  <p className="text-[26px] font-semibold text-white">
+    Secure transactions with two-factor authentication
+  </p>
+  <img src={img1} alt="" className="lg:w-[290px] w-[300px] mx-auto" />
+</motion.div>
 
-<div className="relative bg-[#022627ff] lg:w-100 h-142 flex flex-col gap-10   rounded-2xl">
- <div
-  className="absolute bottom-0 w-full h-90 opacity-90  rounded-b-xl"
-  style={{
-    background:
-      "linear-gradient(180deg, rgba(144, 186, 202, 0) 0%, rgba(86, 127, 137, 0.33) 13.62%, rgba(1, 42, 43, 0.53) 36.66%, #567f36 68.97%, #d9ff43 98.5%)",
-  }}
-></div>
-    <img src={img2} alt="" className="lg:w-100 rounded-t-xl " />
-    <div className="px-[35px]">
+<motion.div
+  className="relative bg-[#022627ff] lg:w-100 h-142 flex flex-col gap-10 rounded-2xl"
+  initial={{ opacity: 0, y: 30 }}        // start slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}     // slide up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
+  <div
+    className="absolute bottom-0 w-full h-90 opacity-90 rounded-b-xl"
+    style={{
+      background:
+        "linear-gradient(180deg, rgba(144, 186, 202, 0) 0%, rgba(86, 127, 137, 0.33) 13.62%, rgba(1, 42, 43, 0.53) 36.66%, #567f36 68.97%, #d9ff43 98.5%)",
+    }}
+  ></div>
+  <img src={img2} alt="" className="lg:w-100 rounded-t-xl" />
+  <div className="px-[35px]">
     <img src={users} alt="" className="w-7 relative pt-5" />
-    </div>
-    <p  className="text-[26px] font-semibold text-white relative px-[35px]">Trusted by 40+ million Investors worldwide</p>
-</div>
+  </div>
+  <p className="text-[26px] font-semibold text-white relative px-[35px]">
+    Trusted by 40+ million Investors worldwide
+  </p>
+</motion.div>
 
 
-<div className="bg-[#022627ff] relative lg:w-100 h-132 flex flex-col gap-10 px-[35px] py-[35px] rounded-2xl">
-    <div className="absolute bottom-0 right-0">
-         <img src={img3} alt="" className="lg:w-[300px] w-[310px] " />
-    </div>
-    <img src={odo} alt="" className="w-7" />
-    <p  className="text-[26px] font-semibold text-white">Data security with no compromises</p>
-   
-</div>
+<motion.div
+  className="bg-[#022627ff] relative lg:w-100 h-132 flex flex-col gap-10 px-[35px] py-[35px] rounded-2xl"
+  initial={{ opacity: 0, y: 30 }}        // start slightly lower and invisible
+  whileInView={{ opacity: 1, y: 0 }}     // slide up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
+  <div className="absolute bottom-0 right-0">
+    <img src={img3} alt="" className="lg:w-[300px] w-[310px]" />
+  </div>
+  <img src={odo} alt="" className="w-7" />
+  <p className="text-[26px] font-semibold text-white">
+    Data security with no compromises
+  </p>
+</motion.div>
 
 
 </div>

@@ -10,6 +10,7 @@ import dollar2 from "../assets/shape_dollar_2.webp";
 import dollar3 from "../assets/shape_dollar_3.webp";
 import dollar4 from "../assets/shape_dollar_4.webp";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 import { Link } from "react-router-dom";
 function PricingHero(){
@@ -36,143 +37,144 @@ function PricingHero(){
 return(
     <section className=" lg:h-120 h-100 relative overflow-hidden">
            <div className="absolute w-[100%]  "><img src={img2} alt="" className=" h-120 w-full" /></div>
-             <header className="h-20 relative w-full z-20">
-            
-                    <div className="flex items-center  justify-between lg:px-[120px] px-[20px] lg:py-[40px] pt-6">
-            
-                      <div className="flex gap-2  items-center">
-                        <img src={img} alt="" className="w-6 h-6" />
-                        <h1 className="font-semibold text-2xl text-white">SYNOX</h1>
-                      </div>
-            
-                      {/* DESKTOP NAV (unchanged) */}
-                      <nav className="hidden lg:flex gap-10">
-                        <Link to="/" className="text-[18px] font-semibold text-white flex">
-                          Home <img src={arrow} alt="" />
-                        </Link>
-            
-                        {/* Services dropdown */}
-                        <div className="relative group">
-                          <div className="flex items-center gap-2 cursor-pointer text-[18px] font-semibold text-white">
-                            Services
-                            <img src={arrow} alt="" />
-                          </div>
-            
-                          <div className="absolute mt-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white text-white p-3 rounded-lg shadow-lg w-60 h-25 z-50 transition-opacity duration-200">
-                            <ul>
-                              <li>
-                                <Link to="/our" className="block hover:bg-gray-700 hover:text-white rounded text-[#012A2B] px-5 h-10 py-2">
-                                  Our Services
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/details" className="block hover:bg-gray-700 hover:text-white rounded text-[#012A2B] px-5 h-10 py-2">
-                                  Services Details
-                                </Link>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-            
-                        {/* Projects */}
-                        <div className="relative group">
-                          <div className="flex items-center gap-2 cursor-pointer text-[18px] font-semibold text-white">
-                            Projects
-                            <img src={arrow} alt="" />
-                          </div>
-            
-                          <div className="absolute mt-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white text-white p-3 rounded-lg shadow-lg w-60 h-25 z-50 transition-opacity duration-200">
-                            <ul>
-                              <li>
-                                <Link to="/projects" className="block hover:bg-gray-700 hover:text-white rounded text-[#012A2B] px-5 h-10 py-2">
-                                  Our Projects
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/details2" className="block hover:bg-gray-700 hover:text-white rounded text-[#012A2B] px-5 h-10 py-2">
-                                  Projects Details
-                                </Link>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-            
-                        <Link to="/pricing" className="text-[18px] font-semibold text-white flex">
-                          Pricing <img src={arrow} alt="" />
-                        </Link>
-                      </nav>
-            
-                      <div className="hidden lg:flex gap-3 bg-[#093e25ff] items-center h-10 w-65 justify-center">
-                        <img src={calling} alt="" className="w-4" />
-                        <h1 className="text-[17px] font-bold text-white">
-                          Hotline:(800)555-0199
-                        </h1>
-                      </div>
-            
-                      {/* ========== MOBILE HAMBURGER (NEW) ========== */}
-                      <button
-                        className="lg:hidden text-white "
-                        onClick={() => setMobileMenu(!mobileMenu)}
-                      >
-                        {mobileMenu ? (
-                          // CLOSE ICON
-                          <svg  xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"  />
-                          </svg>
-                        ) : (
-                          // HAMBURGER
-                          <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                          </svg>
-                        )}
-                      </button>
-                    </div>
-            
-                    {/* ========== MOBILE NAV (SLIDE DOWN) ========== */}
-                    <div className="flex justify-center mt-5">
-                    <div
-                      className={`lg:hidden bg-[#022627] w-[93%]  rounded-xl text-[#093e25ff] bg-white overflow-hidden transition-all duration-300 ${mobileMenu ? "max-h-96 py-4" : "max-h-0 py-0"}
-                      }`}
-                    >
-                      <ul className="px-6 space-y-4 text-[16px] font-semibold">
-            
-                        <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
-            
-                        <li>
-                          <details className="text-[#093e25ff]">
-                            <summary className="cursor-pointer flex items-center justify-between" style={{ listStyle: "none" }}>Services <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></summary>
-                            <ul className=" space-y-2 h-25 w-75 gap-3 px-6 mt-3 flex flex-col justify-center text-[#093e25ff] border border-gray-200 rounded-lg">
-                              <li><Link to="/our" onClick={() => setOpen(false)}>Our Services</Link></li>
-                              <li><Link to="/details" onClick={() => setOpen(false)}>Services Details</Link></li>
-                            </ul>
-                          </details>
-                        </li>
-            
-                        <li>
-                          <details className="text-[#093e25ff]">
-                            <summary className="cursor-pointer flex items-center justify-between" style={{ listStyle: "none" }}>Projects <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></summary>
-                             <ul className=" space-y-2 h-25 w-75 gap-3 px-6 mt-3 flex flex-col justify-center text-[#093e25ff] border border-gray-200 rounded-lg">
-                              <li><Link to="/projects" onClick={() => setOpen(false)}>Our Projects</Link></li>
-                              <li><Link to="/details2" onClick={() => setOpen(false)}>Projects Details</Link></li>
-                            </ul>
-                          </details>
-                        </li>
-            
-                        <li><Link to="/pricing" onClick={() => setOpen(false)}>Pricing</Link></li>
-            
-                        <li className="pt-4 hidden lg:block">
-                          <div className="flex gap-3 bg-[#093e25ff] items-center h-10 w-65 justify-center rounded">
-                            <img src={calling} alt="" className="w-4" />
-                            <h1 className="text-[17px] font-bold text-white">
-                              Hotline:(800)555-0199
-                            </h1>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    </div>
-                  </header>
-            
+                <header className="h-20 relative w-full z-20">
+             
+                     <div className="flex items-center  justify-between lg:px-[120px] px-[20px] lg:py-[40px] pt-6">
+             
+                       <div className="flex gap-2  items-center">
+                         <img src={img} alt="" className="w-6 h-6" />
+                         <h1 className="font-semibold text-2xl text-white">SYNOX</h1>
+                       </div>
+             
+                       {/* DESKTOP NAV (unchanged) */}
+                       <nav className="hidden lg:flex gap-10">
+                         <Link to="/" className="text-[18px] font-semibold text-white flex">
+                           Home <img src={arrow} alt="" />
+                         </Link>
+             
+                         {/* Services dropdown */}
+                         <div className="relative group">
+                           <div className="flex items-center gap-2 cursor-pointer text-[18px] font-semibold text-white">
+                             Services
+                             <img src={arrow} alt="" />
+                           </div>
+             
+                           <div className="absolute mt-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white text-white p-3 rounded-lg shadow-lg w-60 h-25 z-50 transition-opacity duration-200">
+                             <ul>
+                               <li>
+                                 <Link to="/our" className="block hover:bg-gray-700 hover:text-white rounded text-[#012A2B] px-5 h-10 py-2">
+                                   Our Services
+                                 </Link>
+                               </li>
+                               <li>
+                                 <Link to="/details" className="block hover:bg-gray-700 hover:text-white rounded text-[#012A2B] px-5 h-10 py-2">
+                                   Services Details
+                                 </Link>
+                               </li>
+                             </ul>
+                           </div>
+                         </div>
+             
+                         {/* Projects */}
+                         <div className="relative group">
+                           <div className="flex items-center gap-2 cursor-pointer text-[18px] font-semibold text-white">
+                             Projects
+                             <img src={arrow} alt="" />
+                           </div>
+             
+                           <div className="absolute mt-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white text-white p-3 rounded-lg shadow-lg w-60 h-25 z-50 transition-opacity duration-200">
+                             <ul>
+                               <li>
+                                 <Link to="/projects" className="block hover:bg-gray-700 hover:text-white rounded text-[#012A2B] px-5 h-10 py-2">
+                                   Our Projects
+                                 </Link>
+                               </li>
+                               <li>
+                                 <Link to="/details2" className="block hover:bg-gray-700 hover:text-white rounded text-[#012A2B] px-5 h-10 py-2">
+                                   Projects Details
+                                 </Link>
+                               </li>
+                             </ul>
+                           </div>
+                         </div>
+             
+                         <Link to="/pricing" className="text-[18px] font-semibold text-white flex">
+                           Pricing <img src={arrow} alt="" />
+                         </Link>
+                       </nav>
+             
+                       <div className="hidden lg:flex gap-3 bg-[#093e25ff] items-center h-10 w-65 justify-center">
+                         <img src={calling} alt="" className="w-4" />
+                         <h1 className="text-[17px] font-bold text-white">
+                           Hotline:(800)555-0199
+                         </h1>
+                       </div>
+             
+                       {/* ========== MOBILE HAMBURGER (NEW) ========== */}
+                      <div className="bg-[#07340dff] #07340dff flex justify-center items-center h-10 rounded-sm w-10">
+                       <button
+                         className="lg:hidden  text-white "
+                         onClick={() => setMobileMenu(!mobileMenu)}
+                       >
+                         {mobileMenu ? (
+                           // CLOSE ICON
+                           <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                             <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                           </svg>
+                         ) : (
+                           // HAMBURGER
+                           <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                             <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                           </svg>
+                         )}
+                       </button>
+                       </div>
+                     </div>
+             
+                     {/* ========== MOBILE NAV (SLIDE DOWN) ========== */}
+                     <div className="flex justify-center mt-5">
+                     <div
+                       className={`lg:hidden bg-[#022627] w-[93%]  rounded-xl text-[#093e25ff] bg-white overflow-hidden transition-all duration-300 ${mobileMenu ? "max-h-96 py-4" : "max-h-0 py-0"}
+                       }`}
+                     >
+                       <ul className="px-6 space-y-4 text-[16px] font-semibold">
+             
+                         <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
+             
+                         <li>
+                           <details className="text-[#093e25ff]">
+                             <summary className="cursor-pointer flex items-center justify-between" >Services <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></summary>
+                             <ul style={{ listStyle: "none" }} className=" space-y-2 h-25 w-75 gap-3 px-6 mt-3 flex flex-col justify-center text-[#093e25ff] border border-gray-200 rounded-lg">
+                               <li><Link to="/our" onClick={() => setOpen(false)}>Our Services</Link></li>
+                               <li><Link to="/details" onClick={() => setOpen(false)}>Services Details</Link></li>
+                             </ul>
+                           </details>
+                         </li>
+             
+                         <li>
+                           <details className="text-[#093e25ff]">
+                             <summary className="cursor-pointer flex items-center justify-between" >Projects <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></summary>
+                              <ul style={{ listStyle: "none" }} className=" space-y-2 h-25 w-75 gap-3 px-6 mt-3 flex flex-col justify-center text-[#093e25ff] border border-gray-200 rounded-lg">
+                               <li><Link to="/projects" onClick={() => setOpen(false)}>Our Projects</Link></li>
+                               <li><Link to="/details2" onClick={() => setOpen(false)}>Projects Details</Link></li>
+                             </ul>
+                           </details>
+                         </li>
+             
+                         <li><Link to="/pricing" onClick={() => setOpen(false)}>Pricing</Link></li>
+             
+                         <li className="pt-4 hidden lg:block">
+                           <div className="flex gap-3 bg-[#093e25ff] items-center h-10 w-65 justify-center rounded">
+                             <img src={calling} alt="" className="w-4" />
+                             <h1 className="text-[17px] font-bold text-white">
+                               Hotline:(800)555-0199
+                             </h1>
+                           </div>
+                         </li>
+                       </ul>
+                     </div>
+                     </div>
+                   </header>
             
                   {/* ===== YOUR STICKY HEADER (UNCHANGED) ===== */}
                  <div
@@ -286,8 +288,8 @@ return(
             
                         <li>
                           <details className="text-[#093e25ff]">
-                            <summary className="cursor-pointer flex items-center justify-between" style={{ listStyle: "none" }}>Services <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></summary>
-                            <ul className=" space-y-2 h-25 w-75 gap-3 px-6 mt-3 flex flex-col justify-center text-[#093e25ff] border border-gray-200 rounded-lg">
+                            <summary className="cursor-pointer flex items-center justify-between" >Services <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></summary>
+                            <ul style={{ listStyle: "none" }} className=" space-y-2 h-25 w-75 gap-3 px-6 mt-3 flex flex-col justify-center text-[#093e25ff] border border-gray-200 rounded-lg">
                               <li><Link to="/our" onClick={() => setOpen(false)}>Our Services</Link></li>
                               <li><Link to="/details" onClick={() => setOpen(false)}>Services Details</Link></li>
                             </ul>
@@ -296,8 +298,8 @@ return(
             
                         <li>
                           <details className="text-[#093e25ff]">
-                            <summary className="cursor-pointer flex items-center justify-between" style={{ listStyle: "none" }}>Projects <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></summary>
-                             <ul className=" space-y-2 h-25 w-75 gap-3 px-6 mt-3 flex flex-col justify-center text-[#093e25ff] border border-gray-200 rounded-lg">
+                            <summary className="cursor-pointer flex items-center justify-between" >Projects <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></summary>
+                             <ul style={{ listStyle: "none" }} className=" space-y-2 h-25 w-75 gap-3 px-6 mt-3 flex flex-col justify-center text-[#093e25ff] border border-gray-200 rounded-lg">
                               <li><Link to="/projects" onClick={() => setOpen(false)}>Our Projects</Link></li>
                               <li><Link to="/details2" onClick={() => setOpen(false)}>Projects Details</Link></li>
                             </ul>
@@ -330,12 +332,22 @@ return(
                           <div className="absolute left-0 lg:bottom-[-140px] bottom-[-195px] "><img src={bread1} alt="" className="lg:w-full w-50" /></div>
                           <div className="absolute right-0 lg:bottom-[-140px] bottom-[-195px] "><img src={bread2} alt="" className="lg:w-full w-50"  /></div>
                          <div className="absolute top-[-640px] opacity-10 lg:block hidden"><img src={nate} alt="" /></div>
-                         <h1 className="lg:text-[70px] text-[42px] text-white flex justify-center   ">Our Prices</h1>
-                        <div className="flex justify-center gap-2">
+                         <motion.h1 className="lg:text-[70px] text-[42px] text-white flex justify-center   "
+                            initial={{ opacity: 0, y: 50 }} // start hidden and below
+      whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
+      viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+      transition={{ duration: 0.8, ease: "easeOut" }}
+                         >Our Prices</motion.h1>
+                        <motion.div className="flex justify-center gap-2"
+                           initial={{ opacity: 0, y: 50 }} // start hidden and below
+      whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
+      viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
+      transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+                        >
                          <a href="#" className="text-[#C6C6B6] lg:text-[22px] text-[20px] ">Home</a>
                          <a href="#" className="text-[#C6C6B6] lg:text-[22px] text-[20px">_</a>
                          <a href="#" className="text-[#C6C6C6] lg:text-[22px] text-[20px] ">Our Prices</a>
-                        </div>
+                        </motion.div>
                      </div>
     </section>
 )

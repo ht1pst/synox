@@ -6,6 +6,7 @@ import img13 from "../assets/shape_dollar_5.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import { motion } from "framer-motion";
 
 import { Pagination } from "swiper/modules";
 import React, { useState, useEffect } from "react";
@@ -107,14 +108,25 @@ useEffect(() => {
       <div className="absolute top-1/2 left-1/2  -translate-y-1/2 -translate-x-1/2 w-80 h-80 bg-[#ffc107] rounded-full blur-[120px] opacity-30"></div>
 
       <div>
-        <h1 className="lg:text-[50px] text-[30px] font-semibold text-white text-center lg:text-start flex justify-center">
-          What Investors Say About Us
-        </h1>
-        <p className="text-[18px] text-[#C6C6C6] lg:w-160 text-center pt-2 mx-auto">
-          Investors praise our transparent approach, personalized guidance, and
-          user-friendly platform. At Synox, their trust is our greatest
-          endorsement.
-        </p>
+<motion.h1
+  className="lg:text-[50px] text-[30px] font-semibold text-white text-center lg:text-start"
+  initial={{ y: 50, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
+  What Investors Say About Us
+</motion.h1>
+        <motion.p
+  className="text-[18px] text-[#C6C6C6] lg:w-160 text-center pt-2 mx-auto"
+  initial={{ y: 50, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+>
+  Investors praise our transparent approach, personalized guidance, and
+  user-friendly platform. At Synox, their trust is our greatest endorsement.
+</motion.p>
       </div>
 
       {/* Carousel */}
@@ -127,19 +139,20 @@ useEffect(() => {
 >
   {cards.map((card, i) => (
     <SwiperSlide key={i}>
-      <div className="bg-[#022627ff] h-110 py-30 w-[100%]  relative rounded-xl block lg:hidden border-t-[#D9FF43] border-l-0 border-r-0 border-b-[#D9FF43] border flex flex-col justify-center text-center w-[90%] mx-auto mt-20">
-        
-        {/* The floating image */}
+      <motion.div
+        className="bg-[#022627ff] h-110 py-30 w-[90%] relative rounded-xl block lg:hidden border-t-[#D9FF43] border-b-[#D9FF43] border flex flex-col justify-center text-center mx-auto mt-20"
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: i * 0.2 }}
+      >
+        {/* Floating Image */}
         <div className="absolute top-[-40px] left-1/2 -translate-x-1/2">
-          <img
-            src={card.baseImg}
-            alt=""
-            className="rounded-full w-20"
-          />
+          <img src={card.baseImg} alt="" className="rounded-full w-20" />
         </div>
 
         {/* Description */}
-        <p className="lg:text-[20px] text-[18px] px-[15px] lg:font-bold font-thin text-white  text-center mx-auto">
+        <p className="lg:text-[20px] text-[18px] px-[15px] lg:font-bold font-thin text-white text-center mx-auto">
           {card.description}
         </p>
 
@@ -152,8 +165,7 @@ useEffect(() => {
         <p className="text-[12px] text-[#C6C6C6] flex justify-center">
           {card.title}
         </p>
-
-      </div>
+      </motion.div>
     </SwiperSlide>
   ))}
 </Swiper>
