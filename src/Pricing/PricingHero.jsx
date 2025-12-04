@@ -37,6 +37,7 @@ function PricingHero(){
 return(
     <section className=" lg:h-120 h-100 relative overflow-hidden">
            <div className="absolute w-[100%]  "><img src={img2} alt="" className=" h-120 w-full" /></div>
+           
                 <header className="h-20 relative w-full z-20">
              
                      <div className="flex items-center  justify-between lg:px-[120px] px-[20px] lg:py-[40px] pt-6">

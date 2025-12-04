@@ -15,7 +15,7 @@ function Footer(){
             <div className="absolute bottom-[-480px] left-[-400px]"><img src={nate} alt="" /></div>
             <div className="relative" >
 
-<div className="flex flex-col lg:flex-row justify-center items-center lg:gap-75 pt-20 px-[15px]">
+<div className="flex flex-col lg:flex-row justify-center items-center lg:gap-75 pt-20 px-[20px]">
 <h1 className="lg:text-[50px] text-[32px] leading-tight font-semibold text-white flex justify-center"> Subscribe for daily update</h1>
   <div className="flex items-center relaive">
 
@@ -35,7 +35,7 @@ function Footer(){
 </div>
 
 
-<div className="flex flex-col lg:flex-row justify-center lg:gap-33 gap-10 mt-20 relative px-[15px]">
+<div className="flex flex-col lg:flex-row justify-center lg:gap-33 gap-10 mt-20 relative px-[20px]">
     <div className="absolute left-10 top-10 hidden lg:block"><img src={img13} alt="" className="w-15" /></div>
      <div className="absolute bottom-10 right-10"><img src={img14} alt="" className="w-15" /></div>
 <div>

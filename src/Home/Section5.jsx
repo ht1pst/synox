@@ -101,7 +101,7 @@ useEffect(() => {
 
 
   return (
-    <section className="bg-[#022627ff] lg:pt-30 pt-21 h-260 relative overflow-hidden px-[15px] lg:px-[45px]">
+    <section className="bg-[#022627ff] lg:pt-30 pt-21 h-260 relative overflow-hidden px-[20px] lg:px-[45px]">
         <div className="absolute left-10 top-100"><img src={img12} alt="" className="w-15 blur-[2px]" /></div>
         <div className="absolute right-10 bottom-20"><img src={img13} alt="" className="w-15 blur-[2px]" /></div>
       {/* blurred circle background */}

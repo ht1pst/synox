@@ -389,7 +389,7 @@ function Hero() {
 
       {/** … (I am not touching this part, it stays as you wrote it) **/}
 
-      <div className="lg:pt-10 pt-9 px-[13px] flex flex-col relative lg:hidden block">
+      <div className="lg:pt-10 pt-9 px-[20px] flex flex-col relative lg:hidden block">
  <div className="absolute bottom-0 right-[-20px]"><img src={bread2} alt="" /></div>
 <div>
  <motion.h1

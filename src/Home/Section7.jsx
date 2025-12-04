@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function Section7(){
     return(
         <section className="relative bg-[#022627ff]  lg:h-105 h-520 relative ">
-            <div className="px-[15px]">
+            <div className="px-[20px]">
 
 
                 <div>

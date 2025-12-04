@@ -32,7 +32,7 @@ function Section2(){
      
 
     return(
-        <section className=" lg:h-340 h-580 bg-[#022627ff] relative overflow-hidden px-[15px]">
+        <section className=" lg:h-340 h-580 bg-[#022627ff] relative overflow-hidden px-[20px]">
             <div className="absolute lg:top-[-200px] top-[-160px] lg:left-[-400px] left-[-460px]  "><img src={nate} alt="" className="" /></div>
               <div className="absolute lg:top-0 top-20 lg:right-[-200px]  right-[-270px]  "><img src={nate2} alt="" className="" /></div>
        <div className="lg:pt-30 pt-22 relative">

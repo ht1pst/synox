@@ -24,7 +24,7 @@ import btn from "../assets/btn_shape.webp";
 import { motion } from "framer-motion";
 function Section4(){
    return(
-    <section className="bg-[#023436ff] lg:h-230 h-500 relative overflow-hidden px-[15px]">
+    <section className="bg-[#023436ff] lg:h-230 h-500 relative overflow-hidden px-[20px]">
         <div className="absolute bottom-[-300px] right-[-130px] z-20 lg:block hidden "><img src={nate2} alt="" className="w" /></div>
          <div className="absolute bottom-[-350px] left-[-270px] z-20 lg:block hidden "><img src={nate3} alt="" className="w" /></div>
          <div className="absolute top-0 left-30 z-20 lg:block hidden "><img src={img12} alt="" className="w-13" /></div>

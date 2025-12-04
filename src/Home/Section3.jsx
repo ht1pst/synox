@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 
 function Section3(){
     return(
-        <section className="bg-[#023436ff] lg:h-320 h-620 px-[15px] overflow-hidden">
+        <section className="bg-[#023436ff] lg:h-320 h-620 px-[20px] overflow-hidden">
             <div className="lg:pt-30 pt-22 relative">
                 <div>
                    <motion.h1

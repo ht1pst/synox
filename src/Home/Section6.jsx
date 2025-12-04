@@ -17,7 +17,7 @@ function Section6(){
               <div className="absolute top-140 right-[-130px] "><img src={nate} alt="" /></div>
             <div className="absolute top-0 w-full"><img src={img} alt="" className="w-full h-120 " /></div>
             <div>
-<div className="relative lg:pt-30 pt-25 px-[15px]">
+<div className="relative lg:pt-30 pt-25 px-[20px]">
     <motion.h1
       className="lg:text-[50px] text-[30px] font-semibold text-white text-center lg:text-start flex justify-center lg:justify-start"
       initial={{ opacity: 0, y: 50 }} // start hidden and below
