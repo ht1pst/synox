@@ -7,6 +7,8 @@ import img2 from "../assets/hero_image_1.webp";
 import herobg1 from "../assets/hero_bg_1.webp";
 import nate7 from "../assets/shape_nate_7.svg";
 import bread from "../assets/bread.svg";
+import logo from "../assets/site_logo_white.svg";
+import logo2 from "../assets/site_logo_black.svg";
 import dollar1 from "../assets/shape_dollar_1.webp";
 import dollar2 from "../assets/shape_dollar_2.webp";
 import dollar3 from "../assets/shape_dollar_3.webp";
@@ -107,8 +109,7 @@ function Hero() {
                           <div className="flex items-center  justify-between lg:px-[120px] px-[20px] lg:py-[40px] pt-6">
                   
                             <div className="flex gap-2  items-center">
-                              <img src={img} alt="" className="w-6 h-6" />
-                              <h1 className="font-semibold text-2xl text-white">SYNOX</h1>
+                              <img src={logo} alt="" className="" />
                             </div>
                   
                             {/* DESKTOP NAV (unchanged) */}
@@ -251,8 +252,8 @@ function Hero() {
                          <div className="flex items-center  justify-between lg:px-[120px] px-[20px] lg:py-[40px] lg:pt-5 pt-4">
                  
                            <div className="flex gap-2  items-center">
-                             <img src={img} alt="" className="w-6 h-6" />
-                             <h1 className="font-semibold text-2xl text-black">SYNOX</h1>
+                             <img src={logo2} alt=""  />
+                           
                            </div>
                  
                            {/* DESKTOP NAV (unchanged) */}
