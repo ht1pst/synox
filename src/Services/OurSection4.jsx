@@ -54,7 +54,7 @@ function OurSection4(){
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
   };
     return(
-        <section className="bg-[#023436ff] lg:h-260 h-330  overflow-hidden px-[15px] lg:hidden block">
+        <section className="bg-[#023436ff] lg:h-260 h-330  overflow-hidden px-[20px] lg:hidden block">
           
             <div className="lg:pt-70 pt-20 flex flex-col flex-col-reverse lg:flex-row justify-center lg:gap-45 gap-25 relative items-center">
                 <div className="absolute left-10 top-70 hidden lg:block"><img src={dollar2} alt="" className="w-15" /></div>

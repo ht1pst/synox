@@ -14,7 +14,7 @@ import nate2 from "../assets/shape_nate_10.svg";
 import { motion } from "framer-motion";
 function OurSection3(){
     return(
-        <section className="bg-[#023436ff] relative lg:pt-40 pt-20 lg:h-300 h-740 overflow-hidden px-[15px] text-center lg:text-start">
+        <section className="bg-[#023436ff] relative lg:pt-40 pt-20 lg:h-300 h-740 overflow-hidden px-[20px] text-center lg:text-start">
             <div className="absolute top-[-50px] left-[-50px] lg:block hidden"><img src={nate} alt="" /></div>
              <div className="absolute bottom-[-50px] right-[-260px] lg:block hidden"><img src={nate2} alt="" /></div>
             <div>

@@ -4,7 +4,7 @@ import img3 from "../assets/icon_headphone_2.svg";
 import { motion } from "framer-motion";
 function PricingSection2(){
     return(
-        <section className="lg:h-200  h-320 pt-20 px-[15px]">
+        <section className="lg:h-200  h-320 pt-20 px-[20px]">
              <div className="flex flex-col lg:flex-row justify-center gap-10 pt-10 ">
                 <motion.h1 className="lg:text-[45px] text-[30px] text-[#212529] lg:w-150 leading-none font-semibold"
                    initial={{ opacity: 0, y: 50 }} // start hidden and below

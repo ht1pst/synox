@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 
 function DetailsSection2(){
     return(
-        <section className="lg:pt-30 pt-25 lg:h-530 h-790 relative overflow-hidden px-[15px]">
+        <section className="lg:pt-30 pt-25 lg:h-530 h-790 relative overflow-hidden px-[20px]">
             
              <div className="absolute lg:right-[-200px] right-[-270px]  lg:top-140 top-200"><img src={nate3} alt=""  /></div>
              <div className="absolute lg:right-[-270px] right-[-300px]  lg:bottom-[-290px] bottom-[-370px]"><img src={nate5} alt=""  /></div>

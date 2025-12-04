@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 function ProjectsSection2(){
     return(
-        <section className="lg:h-460 h-710 relative lg:pt-30 pt-16 overflow-hidden px-[15px]">
+        <section className="lg:h-460 h-710 relative lg:pt-30 pt-16 overflow-hidden px-[20px]">
             <div className="relative">
             <div className="absolute right-20 top-35"><img src={dollar3} alt="" className="w-15" /></div>
           <div className="absolute bottom-[-460px] lg:right-[-300px] right-[-340px]"><img src={nate5} alt="" /></div>

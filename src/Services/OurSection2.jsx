@@ -9,7 +9,7 @@ function OurSection2(){
 
     
     return(
-        <section className="pt-30 lg:h-160 h-350 px-[15px]">
+        <section className="pt-30 lg:h-160 h-350 px-[20px]">
             <div className="flex flex-col lg:flex-row justify-center lg:gap-50 gap-10">
                 <motion.h1 className="lg:text-[50px] text-[30px] text-[#212529] lg:w-150 leading-none font-semibold"
                  initial={{ opacity: 0, y: 40 }}

@@ -16,7 +16,7 @@ function Footer2(){
             <div className="absolute bottom-[-430px] left-[-390px]"><img src={nate} alt="" /></div>
             <div className="relative" >
 
-<div className="flex flex-col lg:flex-row justify-center items-center lg:gap-75 pt-20 px-[15px]">
+<div className="flex flex-col lg:flex-row justify-center items-center lg:gap-75 pt-20 px-[20px]">
 <h1 className="lg:text-[50px] text-[32px] leading-tight font-semibold text-white flex justify-center"> Subscribe for daily update</h1>
     <div className="flex items-center relaive">
   
