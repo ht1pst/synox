@@ -169,7 +169,7 @@ function Hero() {
                               </Link>
                             </nav>
                   
-                            <div className="hidden lg:flex gap-3 bg-[#093e25ff] items-center h-10 w-65 justify-center">
+                            <div className="hidden lg:flex gap-3 bg-[#03301aff] #03301aff items-center h-12 rounded-lg w-65 justify-center">
                               <img src={calling} alt="" className="w-4" />
                               <h1 className="text-[17px] font-bold text-white">
                                 Hotline:(800)555-0199
@@ -177,7 +177,7 @@ function Hero() {
                             </div>
                   
                             {/* ========== MOBILE HAMBURGER (NEW) ========== */}
-                           <div className="bg-[#07340dff] #07340dff flex justify-center items-center h-10 rounded-sm w-10">
+                           <div className="bg-[#07340dff] #07340dff flex justify-center items-center h-10 rounded-sm w-10 lg:hidden block">
                             <button
                               className="lg:hidden  text-white "
                               onClick={() => setMobileMenu(!mobileMenu)}
@@ -247,9 +247,9 @@ function Hero() {
                    className={`fixed top-0 left-0 w-full z-50 bg-white shadow-md transition-all duration-500 
                    ${showSticky ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}
                  >
-                     <div className="h-17 relative w-full z-20">
+                     <div className="h-20 relative w-full z-20">
                  
-                         <div className="flex items-center  justify-between lg:px-[120px] px-[20px] lg:py-[40px] lg:pt-5 pt-4">
+                         <div className="flex items-center  justify-between lg:px-[120px] px-[20px] lg:py-[15px] lg:pt- pt-4">
                  
                            <div className="flex gap-2  items-center">
                              <img src={logo2} alt=""  />
@@ -313,7 +313,7 @@ function Hero() {
                              </Link>
                            </nav>
                  
-                           <div className="hidden lg:flex gap-3 bg-[#093e25ff] items-center h-10 w-65 justify-center">
+                           <div className="hidden lg:flex gap-3 bg-[#093e25ff] items-center h-12 rounded-lg w-65 justify-center">
                              <img src={calling} alt="" className="w-4" />
                              <h1 className="text-[17px] font-bold text-white">
                                Hotline:(800)555-0199
@@ -321,7 +321,7 @@ function Hero() {
                            </div>
                  
                            {/* ========== MOBILE HAMBURGER (NEW) ========== */}
-                           <div className="bg-[#093e25ff] flex justify-center items-center h-10 rounded-sm w-10">
+                           <div className="bg-[#093e25ff] flex justify-center items-center h-10 rounded-sm w-10 block lg:hidden">
                            <button
                              className="lg:hidden  text-white "
                              onClick={() => setOpen(!open)}

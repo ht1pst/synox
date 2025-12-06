@@ -57,7 +57,7 @@ function ProjDetailsSection2(){
 <div className=" top-8 border-1 border-l-0 border-r-0 border-t-0 border-gray-200  w-[85%] mt-10"></div>
     </div>
 </div>
-<motion.div className="flex flex-col lg:flex-row justify-center lg:gap-35 gap-5 mt-5"
+<motion.div className="flex flex-col lg:flex-row justify-center lg:gap-30 gap-5 mt-5"
  initial={{ opacity: 0, y: 40 }}
  whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true, amount: 0.3 }}

@@ -23,7 +23,7 @@ function DetailsSection2(){
 <motion.div className="flex justify-center relative overflow-hidden"
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.7, delay: 1.0,  ease: "easeOut" }}
+  transition={{ duration: 0.7,   ease: "easeOut" }}
 >
   
      <div className="absolute  top-1/2 -translate-y-1/2 z-20 ">

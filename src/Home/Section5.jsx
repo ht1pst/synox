@@ -109,7 +109,7 @@ useEffect(() => {
 
       <div>
 <motion.h1
-  className="lg:text-[50px] text-[30px] font-semibold text-white text-center lg:text-start"
+  className="lg:text-[50px] text-[30px] font-semibold text-white text-center lg:text-start flex lg:justify-center justify-start"
   initial={{ y: 50, opacity: 0 }}
   whileInView={{ y: 0, opacity: 1 }}
   viewport={{ once: true, amount: 0.3 }}

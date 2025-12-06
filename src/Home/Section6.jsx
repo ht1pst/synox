@@ -19,7 +19,7 @@ function Section6(){
             <div>
 <div className="relative lg:pt-30 pt-25 px-[20px]">
     <motion.h1
-      className="lg:text-[50px] text-[30px] font-semibold text-white text-center lg:text-start flex justify-center lg:justify-start"
+      className="lg:text-[50px] text-[30px] font-semibold text-white text-center lg:text-start flex lg:justify-center justify-start"
       initial={{ opacity: 0, y: 50 }} // start hidden and below
       whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
       viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible

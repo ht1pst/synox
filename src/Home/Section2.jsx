@@ -79,22 +79,33 @@ function Section2(){
   ))}
 </motion.div>
 
-<div className="flex flex-col   justify-center relative items-center    lg:pt-50 pt-20">
-     <div className="absolute top-1/2 right-30 z-20 hidden "><img src={chart} alt="" className="w-40" /></div>
+<div className="flex flex-col lg:flex-row   justify-center relative items-center    lg:pt-50 pt-20">
+     <div className="absolute top-1/2 right-25 z-20 hidden lg:block "><img src={chart} alt="" className="w-50 " /></div>
      <div className="absolute bottom-[-50px] right-10 hidden lg:block "><img src={dollar5} alt="" className="w-15" /></div>
              <div className="absolute bottom-60 right-170 "><img src={dollar3} alt="" className="w-15" /></div>
     <div>
   <motion.img
     src={shape}
     alt="Shape"
-    className="w-175 lg:bottom-[-40px] bottom-[-15px] absolute left-1/2 -translate-x-1/2"
+    className="w-175 lg:bottom-[-40px] bottom-[-15px] absolute left-1/2 -translate-x-1/2 block lg:hidden"
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.3 }}
     transition={{ duration: 0.8, ease: "easeOut" }}
   />
+
+ <motion.img
+    src={shape}
+    alt="Shape"
+    className="w-175 lg:bottom-[-40px] bottom-[-15px] absolute hidden lg:block right-40"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.3 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+  />
+
 </div>
-         <div>
+         <div className="">
 <motion.h1
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
@@ -171,7 +182,7 @@ function Section2(){
 
          <div className="relative mt-10">
              <div className="absolute top-10 left-10  "><img src={dollar3} alt="" className="w-12" /></div>
-             <div className="absolute top-30 right-3 z-20  "><img src={chart} alt="" className="w-22" /></div>
+             <div className="absolute top-30 right-3 z-20 lg:hidden block  "><img src={chart} alt="" className="w-22" /></div>
              
 <motion.img
   src={mac}
@@ -194,7 +205,7 @@ function Section2(){
   whileInView={{ opacity: 1, y: 0 }}   // slide up into place
   viewport={{ once: true, amount: 0.3 }} 
   transition={{ duration: 0.8, ease: "easeOut" }}
-  className="flex flex-col lg:flex-row relative justify-center lg:gap-4 gap-7 lg:mt-30 mt-23"
+  className="flex flex-col lg:flex-row relative justify-center lg:gap-4 gap-7 lg:mt-0 mt-23"
 >
   {/* Decorative Dollar Image */}
   <motion.img
@@ -213,7 +224,7 @@ function Section2(){
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.3 }}
     transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} // stagger
-    className="lg:w-105 lg:h-45 h-70 px-[30px] py-[40px] lg:rounded-xl rounded-2xl bg-[#023436ff] hover:border hover:border-[#D9FF43] transition-all duration-700 ease-in-out"
+    className="lg:w-100 lg:h-45 h-70 px-[30px] py-[40px] lg:rounded-xl rounded-2xl bg-[#023436ff] hover:border hover:border-[#D9FF43] transition-all duration-700 ease-in-out"
   >
     <div className="flex flex-col lg:flex-row items-start gap-5">
       <img src={bag} alt="" className="lg:w-8 w-13" />
@@ -231,7 +242,7 @@ function Section2(){
   whileInView={{ opacity: 1, y: 0 }}   // slide up into place
   viewport={{ once: true, amount: 0.3 }} 
   transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }} // slight delay for stagger
-  className="lg:h-45 h-70 px-[30px] py-[40px] lg:rounded-xl rounded-2xl bg-[#023436ff] hover:border hover:border-[#D9FF43] transition-all duration-700 ease-in-out"
+  className="lg:h-45 lg:w-100 h-70 px-[30px] py-[40px] lg:rounded-xl rounded-2xl bg-[#023436ff] hover:border hover:border-[#D9FF43] transition-all duration-700 ease-in-out"
 >
   <div className="flex flex-col lg:flex-row items-start gap-5">
     <img src={overlay} alt="" className="lg:w-8 w-13" />
@@ -247,7 +258,7 @@ function Section2(){
   whileInView={{ opacity: 1, y: 0 }}    // slide up into place
   viewport={{ once: true, amount: 0.3 }} 
   transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }} // staggered delay
-  className="lg:h-45 h-78 px-[30px] py-[40px] lg:rounded-xl rounded-2xl bg-[#023436ff] hover:border hover:border-[#D9FF43] transition-all duration-700 ease-in-out"
+  className="lg:h-45 lg:w-100 h-78 px-[30px] py-[40px] lg:rounded-xl rounded-2xl bg-[#023436ff] hover:border hover:border-[#D9FF43] transition-all duration-700 ease-in-out"
 >
   <div className="flex flex-col lg:flex-row items-start gap-5">
     <img src={dollar2} alt="" className="lg:w-8 w-13" />

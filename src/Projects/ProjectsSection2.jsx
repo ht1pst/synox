@@ -17,7 +17,7 @@ function ProjectsSection2(){
             <div className="absolute right-20 top-35"><img src={dollar3} alt="" className="w-15" /></div>
           <div className="absolute bottom-[-460px] lg:right-[-300px] right-[-340px]"><img src={nate5} alt="" /></div>
           <div className="absolute bottom-[-520px] left-[-300px]"><img src={nate6} alt="" /></div>
-             <div className="flex flex-col lg:justify-center justify-center lg:gap-20 gap-7 pt-10">
+             <div className="flex flex-col lg:flex-row lg:justify-center justify-center lg:gap-20 gap-7 pt-10">
                 <motion.h1 className="lg:text-[45px] text-[30px] text-[#212529] lg:w-150 leading-none font-semibold leading-tight"
                  initial={{ opacity: 0, y: 40 }}
  whileInView={{ opacity: 1, y: 0 }}

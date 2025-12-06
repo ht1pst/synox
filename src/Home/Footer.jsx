@@ -35,7 +35,7 @@ function Footer(){
 </div>
 
 
-<div className="flex flex-col lg:flex-row justify-center lg:gap-33 gap-10 mt-20 relative px-[20px]">
+<div className="flex flex-col lg:flex-row justify-center lg:gap-33 gap-10 mt-20 relative px-[20px] ">
     <div className="absolute left-10 top-10 hidden lg:block"><img src={img13} alt="" className="w-15" /></div>
      <div className="absolute bottom-10 right-10"><img src={img14} alt="" className="w-15" /></div>
 <div>
@@ -86,8 +86,8 @@ function Footer(){
 </div>
 
 <div className="border border-b-0 border-r-0 border-l-0 border-gray-700 mx-auto w-[90%] mt-30"></div>
-<div className="flex flex-col text-center lg:text-start justify-between  pt-10  ">
-    <div><p className="text-[16px] text-white lg:px-23 px-10">Copyright © 2024 Synox, All rights reserved.</p></div>
+<div className="flex flex-col lg:flex-row text-center lg:text-start justify-between lg:px-20  pt-10  ">
+    <div><p className="text-[16px] text-white  px-10 lg:px-0">Copyright © 2024 Synox, All rights reserved.</p></div>
     <div className="flex gap-3 items-center justify-center lg:justify-start mt-4 lg:mt-0">
         <p className="text-[16px] text-white">Follow Us -</p>
         

@@ -57,8 +57,8 @@ function Footer2(){
 
 <div className="flex flex-col gap-4">
     <p className="text-[#C6C6C6] text-[16px] font-semibold">Quick Link</p>
-    <div className="border border-l-0 border-r-0 border-t-0 text-gray-300"></div>
-    <a href="#" className="text-white text-[18px] font-bold mt-3 lg:mt-10">Gold Investments</a>
+    <div className="border border-l-0 border-r-0 border-t-0 text-gray-700"></div>
+    <a href="#" className="text-white text-[18px] font-bold mt-3 lg:mt-0">Gold Investments</a>
     <a href="#" className="text-white  text-[18px] font-bold">Property Investment</a>
     <a href="#" className="text-white  text-[18px] font-bold">Gold Investments</a>
     <a href="#" className="text-white  text-[18px] font-bold">Product Salute</a>
@@ -68,8 +68,8 @@ function Footer2(){
 
 <div className="flex flex-col gap-4">
     <p className="text-[#C6C6C6] text-[16px] font-semibold">Information</p>
-    <div className="border border-l-0 border-r-0 border-t-0 text-gray-300"></div>
-    <a href="#" className="text-white  text-[18px] font-bold mt-3 lg:mt-10">Career</a>
+    <div className="border border-l-0 border-r-0 border-t-0 text-gray-700"></div>
+    <a href="#" className="text-white  text-[18px] font-bold mt-3 lg:mt-0">Career</a>
     <a href="#" className="text-white  text-[18px] font-bold">Privacy Policy</a>
     <a href="#" className="text-white  text-[18px] font-bold">Terms & condition</a>
     <a href="#" className="text-white  text-[18px] font-bold">Refund & News</a>
@@ -79,16 +79,16 @@ function Footer2(){
 
 <div className="flex flex-col gap-4 ">
     <p className="text-[#C6C6C6] text-[16px] font-semibold">Download App</p>
-    <div className="border border-l-0 border-r-0 border-t-0 text-gray-300"></div>
-    <p className="text-[#C6C6C6] text-[18px] font-semibold w-60 lg:mt-5 mt-3">Available in any kind of ready version</p>
+    <div className="border border-l-0 border-r-0 border-t-0 text-gray-700"></div>
+    <p className="text-[#C6C6C6] text-[18px] font-semibold w-60 lg:mt-0 mt-3">Available in any kind of ready version</p>
     <img src={app} alt=""  className="w-50 mt-5"/>
     <img src={google} alt="" className="w-50" />
 </div>
 </div>
 
 <div className="border border-b-0 border-r-0 border-l-0 border-gray-700 mx-auto w-[90%] mt-30"></div>
-<div className="flex flex-col text-center lg:text-start justify-between  pt-10  ">
-    <div><p className="text-[16px] text-white lg:px-23 px-10">Copyright © 2024 Synox, All rights reserved.</p></div>
+<div className="flex flex-col lg:flex-row text-center lg:text-start justify-between  pt-10 lg:px-20  ">
+    <div><p className="text-[16px] text-white lg:px-0 px-10">Copyright © 2024 Synox, All rights reserved.</p></div>
     <div className="flex gap-3 items-center justify-center lg:justify-start mt-4 lg:mt-0">
         <p className="text-[16px] text-white">Follow Us -</p>
         

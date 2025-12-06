@@ -67,7 +67,7 @@ function PricingSection3(){
 <div className="absolute right-[-270px] top-10 "><img src={nate10} alt="" /></div>
 <div className="absolute left-26 top-135 "><img src={dollar2} alt="" className="w-15" /></div>
     {/*01 */}
-<motion.div className="flex flex-col lg:flex-row px-[20px] bg-[#012A2B] lg:w-full lg:h-80 h-220  lg:items-center lg:justify-start rounded-xl gap-20 relative"
+<motion.div className="flex flex-col lg:flex-row px-[20px] lg:px-0 bg-[#012A2B] lg:w-full lg:h-80 h-220  lg:items-center lg:justify-start rounded-xl gap-20 relative hover:border hover:border-[#04512dff] #04512dff transition-all duration-700 ease-in-out"
    initial={{ opacity: 0, y: 50 }} // start hidden and below
       whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
       viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
@@ -137,7 +137,7 @@ function PricingSection3(){
 
 
  {/*02 */}
-<motion.div  className="flex flex-col lg:flex-row px-[20px] bg-[#012A2B] lg:w-full lg:h-80 h-220  lg:items-center lg:justify-start rounded-xl gap-20 relative"
+<motion.div  className="flex flex-col lg:flex-row px-[20px] lg:px-0 bg-[#012A2B] lg:w-full lg:h-80 h-220  lg:items-center lg:justify-start rounded-xl gap-20 relative hover:border hover:border-[#04512dff] #04512dff transition-all duration-700 ease-in-out"
    initial={{ opacity: 0, y: 50 }} // start hidden and below
       whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
       viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
@@ -205,7 +205,7 @@ function PricingSection3(){
 
 
  {/*03 */}
-<motion.div className="flex flex-col lg:flex-row px-[20px] bg-[#012A2B] lg:w-full lg:h-80 h-220  lg:items-center lg:justify-start rounded-xl gap-20 relative"
+<motion.div className="flex flex-col lg:flex-row px-[20px] lg:px-0 bg-[#012A2B] lg:w-full lg:h-80 h-220  lg:items-center lg:justify-start rounded-xl gap-20 relative hover:border hover:border-[#04512dff] #04512dff transition-all duration-700 ease-in-out"
    initial={{ opacity: 0, y: 50 }} // start hidden and below
       whileInView={{ opacity: 1, y: 0 }} // animate to visible and in place
       viewport={{ once: true, amount: 0.3 }} // trigger once when 30% visible
