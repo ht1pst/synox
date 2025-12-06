@@ -140,7 +140,7 @@ useEffect(() => {
   {cards.map((card, i) => (
     <SwiperSlide key={i}>
       <motion.div
-        className="bg-[#022627ff] h-110 py-30 w-[90%] relative rounded-xl block lg:hidden border-t-[#D9FF43] border-b-[#D9FF43] border flex flex-col justify-center text-center mx-auto mt-20"
+        className="bg-[#022627ff] h-110 py-30 w-[90%] relative rounded-xl block lg:hidden border-t-[#D9FF43] border-b-[#D9FF43] border-l-0 border-r-0  border flex flex-col justify-center text-center mx-auto mt-20"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
